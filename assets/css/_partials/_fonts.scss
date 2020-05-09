@@ -1,0 +1,19 @@
+/**
+ * Import font files in EOT, WOFF, and TTF format.
+ * @param  {String} $file-name name of font file, minus extension
+ */
+
+@mixin font-src($file-name) {
+  src: url('/css/webfonts/#{$file-name}.eot');
+  src:
+    url('../fonts/#{$file-name}.woff') format('woff'),
+    url('../fonts/#{$file-name}.ttf') format('truetype'),
+    url('../fonts/#{$file-name}.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+  @include font-src('ProximaNova-Regular');
+  font-family: 'Proxima Nova';
+  font-weight: 400;
+  font-style: normal;
+}

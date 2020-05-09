@@ -1,6 +1,23 @@
 header.header.container
+  .header__photo
+    figure.header__photo-wrapper
+      img(src="assets/img/headshot.jpg")
+
   .header__intro
     h1.header__title Karunya Tota
     p.header__profession Software Engineer
     p.header__affiliation Panorama Education
     p.header__pronoun she/her/hers
+
+    ul.header__links.list_unstyled
+      for link in public._data.contact.links
+        li
+          a(href="#{link.url}")
+            i.fa(class="#{link.icon}" aria-hidden="true" title="#{link.title}")
+
+    nav
+      ul.header__nav.list-unstyled
+        for link in public._data.nav.options
+          li
+            a(data-scroll href="#{link.url}") #{link.title}
+

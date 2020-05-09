@@ -2,24 +2,40 @@
 // https://coolors.co/fac9b8-efe5dc-dbf9f4-fbfefb-25283d
 
 $alabaster: hsl(28, 37, 90);
-$space_cadet: hsl(233, 24, 19);
+$apricot: hsl(15, 87%, 85%);
 $baby_powder: hsl(120, 60, 99);
+$light_cyan: hsl(170, 71, 92);
+$space_cadet: hsl(233, 24, 19);
+$yellow: rgba(245, 215, 110, .5);
 
 $spacer: 20px;
 
 body {
-  background-color: $baby_powder;
+  background-color: $alabaster;
   overflow-x: hidden;
   margin: 0 auto;
 }
 
 .container {
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: $spacer;
 }
 
 .list-unstyled {
   list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: $space_cadet;
+  background: $yellow;
+
+  &:hover {
+    background: rgba($yellow, 1.0);
+  }
 }

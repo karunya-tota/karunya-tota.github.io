@@ -17,5 +17,21 @@
         "icon": "fas fa-envelope"
       }
     ]
+  },
+  "nav": {
+    "options": [
+      {
+        "title": "about me",
+        "url": ""
+      },
+      {
+        "title": "projects",
+        "url": ""
+      },
+      {
+        "title": "timeline",
+        "url": ""
+      }
+    ]
   }
 }

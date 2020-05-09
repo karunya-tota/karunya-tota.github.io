@@ -1,8 +1,101 @@
 .header {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  color: $space-cadet;
+
+  &__intro {
+    text-align: left;
+  }
 
   &__title {
     font-size: 2rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      background-color: $apricot;
+      height: 25px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
+  &__profession {
+    @extend .font-secondary;
+    letter-spacing: 1.5px;
+    margin-bottom: 0;
+  }
+
+  &__affiliation {
+    @extend .font-secondary;
+    letter-spacing: 1.5px;
+    margin-bottom: 0;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  &__links {
+
+    a {
+      color: $space_cadet;
+      background-color: transparent;
+    }
+
+    .fa {
+      margin-right: $spacer;
+    }
+
+    .fa:hover {
+      color: darken(white, 20%);
+    }
+  }
+
+  &__nav {
+    display: flex;
+
+    a {
+      margin-right: ($spacer/1.8);
+    }
+  }
+
+  &__photo {
+    max-width: 300px;
+  }
+
+  &__photo-wrapper {
+    position: relative;
+
+     &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -20%;
+      transform: rotate(-45deg);
+      height: 100px;
+      width: 100px;
+      background-color: $apricot;
+      z-index: -1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 4%;
+      left: 6%;
+      background-color: $space_cadet;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    > img {
+      width: 100%;
+      display: inline;
+    }
   }
 }
