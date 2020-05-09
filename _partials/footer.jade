@@ -1,0 +1,8 @@
+footer.footer.dark
+  .container
+
+    ul.footer__links.list_unstyled
+      for link in public._data.contact.links
+        li
+          a(href="#{link.url}")
+            i.fa(class="#{link.icon}" aria-hidden="true" title="#{link.title}")

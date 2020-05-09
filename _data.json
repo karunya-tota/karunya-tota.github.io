@@ -1,1 +1,21 @@
-{}
+{
+  "contact": {
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/karunya-tota",
+        "icon": "fab fa-github-alt"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/karunyatota",
+        "icon": "fab fa-linkedin"
+      },
+      {
+        "title": "Email",
+        "url": "mailto:kaytota@gmail.com",
+        "icon": "fas fa-envelope"
+      }
+    ]
+  }
+}

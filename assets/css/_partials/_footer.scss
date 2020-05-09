@@ -1,0 +1,27 @@
+
+.footer {
+  text-align: center;
+  color: $baby_powder;
+
+  li {
+    display: inline;
+  }
+
+  .fa {
+    margin-right: 2em;
+  }
+
+  .fa:hover {
+    color: darken(white, 20%);
+  }
+}
+
+.dark {
+  background-color: $space_cadet;
+
+  a {
+    color: $baby_powder;
+    background-color: transparent;
+  }
+}
+

@@ -1,7 +1,25 @@
 // https://coolors.co/b0c6ce-938ba1-fe5f55-c7efcf-eef5db
-$beige: hsl(76, 57, 91);
+// https://coolors.co/fac9b8-efe5dc-dbf9f4-fbfefb-25283d
+
+$alabaster: hsl(28, 37, 90);
+$space_cadet: hsl(233, 24, 19);
+$baby_powder: hsl(120, 60, 99);
+
+$spacer: 20px;
 
 body {
-  background-color: $beige;
+  background-color: $baby_powder;
   overflow-x: hidden;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacer;
+}
+
+.list-unstyled {
+  list-style-type: none;
 }
