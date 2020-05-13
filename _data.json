@@ -21,15 +21,15 @@
   "nav": {
     "options": [
       {
-        "title": "about me",
+        "title": "<projects/>",
         "url": ""
       },
       {
-        "title": "projects",
+        "title": "<blog/>",
         "url": ""
       },
       {
-        "title": "timeline",
+        "title": "<resources/>",
         "url": ""
       }
     ]

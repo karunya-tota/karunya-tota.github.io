@@ -1,0 +1,31 @@
+.about {
+  background-color: $baby_powder;
+
+  h2 {
+    letter-spacing: 1px;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.projects {
+  // TODO: Remove
+  height: 300px;
+  background-color: $baby_powder;
+  text-align: center;
+
+  h2 {
+    letter-spacing: 1px;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .event-date, .event-description {
+    display: inline-block;
+  }
+
+  .event-description {
+    margin-bottom: ($spacer / 2);
+  }
+}
+

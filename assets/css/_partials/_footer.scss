@@ -2,6 +2,8 @@
 .footer {
   text-align: center;
   color: $baby_powder;
+  bottom: 0px;
+  width: 100%;
 
   li {
     display: inline;
@@ -17,7 +19,7 @@
 }
 
 .dark {
-  background-color: $space_cadet;
+  background-color: hsl(222, 11%, 18%);
 
   a {
     color: $baby_powder;

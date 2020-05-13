@@ -1,25 +1,33 @@
-// https://coolors.co/b0c6ce-938ba1-fe5f55-c7efcf-eef5db
-// https://coolors.co/fac9b8-efe5dc-dbf9f4-fbfefb-25283d
-
 $alabaster: hsl(28, 37, 90);
 $apricot: hsl(15, 87%, 85%);
 $baby_powder: hsl(120, 60, 99);
-$light_cyan: hsl(170, 71, 92);
+$light_cyan: hsl(167, 33%, 84%);
 $space_cadet: hsl(233, 24, 19);
-$yellow: rgba(245, 215, 110, .5);
+$unbleached_silk: hsl(25, 76%, 87%);
+$champagne_pink: hsl(22, 34%, 83%);
+$tea_green: hsl(92, 34%, 76%);
+$yellow: hsl(43, 82%, 89%);
+$forest_green: hsl(138, 25%, 56%);
+$pistachio: hsl(94, 38%, 59%);
 
 $spacer: 20px;
 
 body {
-  background-color: $alabaster;
-  overflow-x: hidden;
   margin: 0 auto;
+  background-color: $yellow;
+  overflow-x: hidden;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
+  max-width: 1040px;
+  margin: 0 auto;
   padding: $spacer;
+}
+
+section {
+  p {
+    margin-bottom: $spacer;
+  }
 }
 
 .list-unstyled {
@@ -33,9 +41,33 @@ li {
 a {
   text-decoration: none;
   color: $space_cadet;
-  background: $yellow;
+  background: $apricot;
 
   &:hover {
-    background: rgba($yellow, 1.0);
+    background: rgba($apricot, 1.2);
+  }
+}
+
+.section-title {
+
+  font-size: 1.5rem;
+  margin: 0 auto;
+  font-weight: bold;
+  margin-bottom: ($spacer / 2);
+  position: relative;
+  display: table; // shrinkwrap
+  padding: 0 10px;
+  z-index: 2;
+
+  &::after {
+    content: '';
+    background-color: $apricot;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    z-index: -1;
   }
 }

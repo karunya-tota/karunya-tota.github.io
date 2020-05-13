@@ -1,18 +1,28 @@
 .header {
-  flex-direction: row;
-  color: $space-cadet;
+  .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: $spacer * 4;
+    color: $space-cadet;
+    text-align: left;
+  }
 
   &__intro {
-    text-align: left;
+    margin-bottom: ($spacer / 2);
   }
 
   &__title {
     font-size: 2rem;
+    margin: 0 auto;
+    margin-top: 30%;
+    margin-bottom: ($spacer / 2);
     position: relative;
 
     &::after {
       content: '';
-      background-color: $apricot;
+      background-color: $apricot ;
       height: 25px;
       position: absolute;
       top: 50%;
@@ -23,62 +33,47 @@
     }
   }
 
-  &__profession {
-    @extend .font-secondary;
-    letter-spacing: 1.5px;
-    margin-bottom: 0;
-  }
-
-  &__affiliation {
+  &__profession, &__affiliation {
     @extend .font-secondary;
     letter-spacing: 1.5px;
     margin-bottom: 0;
   }
 
   ul {
-    padding-left: 0;
+    padding: 0;
   }
 
-  &__links {
-
-    a {
-      color: $space_cadet;
-      background-color: transparent;
-    }
-
-    .fa {
-      margin-right: $spacer;
-    }
-
-    .fa:hover {
-      color: darken(white, 20%);
-    }
-  }
 
   &__nav {
     display: flex;
+    justify-content: left;
 
     a {
-      margin-right: ($spacer/1.8);
+      margin-right: $spacer;
+      background-color: $baby_powder;
     }
   }
 
   &__photo {
-    max-width: 300px;
+    min-width: 400px;
+    max-width: 500px;
   }
 
   &__photo-wrapper {
+    margin-top: 0;
     position: relative;
+    margin-top: 15%;
 
+    /*
      &::before {
       content: '';
-      position: absolute;
+      position: relative;
       top: 0;
       left: -20%;
       transform: rotate(-45deg);
       height: 100px;
       width: 100px;
-      background-color: $apricot;
+      background-color: $forest_green;
       z-index: -1;
     }
 
@@ -87,11 +82,12 @@
       position: absolute;
       top: 4%;
       left: 6%;
-      background-color: $space_cadet;
+      background-color: $pistachio;
       width: 100%;
       height: 100%;
       z-index: -1;
     }
+    */
 
     > img {
       width: 100%;
